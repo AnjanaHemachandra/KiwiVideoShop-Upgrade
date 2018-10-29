@@ -1,0 +1,273 @@
+/*************Box Normaliser**************/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*************Smallest screens**************/
+
+/*****Body in General Starts*******/
+body {
+  font-family: 'Arimo', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #F1F1F1;
+}
+h2, h1, h4, p {
+	text-align: center;
+	color: black;
+}
+h4 {
+	margin-top: 5px;
+	font-weight: bold;
+}
+/*****Body in General Ends*******/
+
+/*****Headder Starts*******/
+header {
+	width: 95%;
+	height: auto;
+	margin: 0px 2.5%;
+	background-color: black;
+	overflow: hidden;
+}
+/*logo*/
+.logo  {
+	max-width: 120px;
+	height: 120px;
+	margin: 20px auto;
+	padding-left: 20px;
+	text-align: center;
+	display: block;
+}
+.site_name {
+	color: white;
+	margin: 50px auto;
+}
+/*****Headder Ends*******/
+
+/*****Content and Nav Block Starts********/
+.content_and_nav_block {
+	width: 95%;
+	margin: 0px 2.5%;
+}
+
+/*****Nav Block Starts********/
+.nav {
+	background-color: #8A61E8;
+}
+.nav ul {
+	padding-left: 0px;
+	width: 100%;
+    list-style: none;
+    text-align: center;	
+}
+.nav ul li {
+	font-weight: 700;
+	font-size: 1.5em;
+	padding: 10px 20px;
+	list-style: none;
+}
+.nav ul li a {
+	text-decoration: none;
+}
+.nav ul li a:link {
+	color: white;
+}
+.nav ul li a:visited {
+	color: black;
+}
+.nav ul li a:hover {
+	color: yellow;
+}
+.nav ul li a:active {
+	color: yellow;
+}
+/*****Nav Block Ends********/
+
+/*****Content Block Starts********/
+.content {
+	background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content p,
+.content ul li {
+	color: white;
+}
+.content h1 {
+	font-weight: bold;
+}
+.content div hr {
+	border: 1px solid white;
+}
+.content p a {
+	color: white;
+	font-weight: bold;
+}
+.content p a:hover {
+	color: yellow;
+}
+.content ul li a {
+	color: white;
+	font-weight: bold;
+}
+.content ul li a:hover {
+	color: yellow;
+}
+.visits {
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+	font-size: .6em;
+}
+/*****Content Block Ends********/
+/*****Content and Nav Block Ends********/
+
+/*****Form Block Stars********/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+textarea {
+	display: block;
+	font-size: 1em;
+	font-weight: 700;
+	color: black;
+	background-color: #e8eeef;
+	height: 30px;
+	width: 60%;
+	margin: 0px 20% 10px 20%;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 2.5px black;
+}
+label {
+	display: block;
+	font-size: 1.2em;
+	font-weight: 700;
+	width: 60%;
+	margin: 0px 20% 10px 20%;
+	color: white;
+}
+span {
+	text-align: center;
+	color: white;
+	display: block;
+}
+input:hover {
+	background-color: white;
+}
+textarea:hover {
+	background-color: white;
+}
+/*****Form Block Ends********/
+
+/*****Pic Gallery Start********/
+.pic-gallery {
+	background-color: #CA19E3;
+	height: 200px;
+}
+.tra-gallery{
+	background-color: #147DB4;
+	height: 200px;
+}
+.pics,
+.tra{
+	background-color: gray;
+	height: 140px;
+	width: 20%;
+	margin: 0 2.5%;
+	float: left;
+}
+.pics{
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.pic1{
+	background-image: url("venom.jpg");
+}
+.pic2{
+	background-image: url("fast_furious.jpg");
+}
+.pic3{
+	background-image: url("avengers.jpg");
+}
+.pic4{
+	background-image: url("predator.jpg");
+}
+.tra iframe{
+	height: 140px;
+	width: 100%;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*****Pic Gallery Ends********/
+
+/*****Footer Starts********/
+footer {
+	background-color: black;
+	height: 100px;
+	width: 95%;
+	margin: 0px 2.5%;
+}
+footer p {
+	color: white;
+	padding-top: 30px;
+	line-height: 1.2;
+}
+footer ul{
+	position: fixed;
+	z-index: 700;
+	bottom: 0px;
+	right: 0px;
+	margin: 0px;
+}
+footer ul li {
+	padding: 0px;
+	list-style: none;
+}
+footer ul li a img {
+	height: 40px;
+	width: 40px;
+	margin: 0px;	
+}
+/*****Footer Ends********/
+
+
+/**************Medium Screens**************/
+@media (min-width: 650px) {
+
+/*****Information Body - History ends********/
+}
+
+
+/***************Larger Screens*************/
+@media (min-width: 1025px) {
+
+/*****Headder Starts*****/
+/*logo*/
+.logo {
+	float: left;
+	text-align: left;
+	width: 25%;
+	margin: 20px 0px;
+}
+.nav,
+.content {
+	min-height: 350px;
+}
+/*****Headder Ends*****/
+}
